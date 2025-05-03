@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(cors({
     origin: 'https://smartnotesfrontend-production.up.railway.app', // React app origin
     credentials: true,
-    sameSite: 'Lax', // allow cookies to be sent
+    sameSite: 'none', // allow cookies to be sent
   }));
 
 app.use('/api/notes', noteRoutes);
