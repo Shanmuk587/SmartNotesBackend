@@ -82,7 +82,7 @@ exports.logout = async (req, res, next) => {
       res.clearCookie('token', {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        sameSite: 'Strict',
+        sameSite: 'none',
         path: '/', // should match the path when the cookie was set
       });
   
