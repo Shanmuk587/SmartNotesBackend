@@ -4,9 +4,8 @@
  * @returns {Promise<string>} - The generated summary
  */
 // summaryController.js
-
-const { GoogleGenerativeAI } = require("@google/generative-ai");
 require('dotenv').config();
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 // Initialize Gemini client
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) {
