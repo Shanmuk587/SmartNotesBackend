@@ -9,7 +9,8 @@ const noteRoutes=require('./routes/noteRoutes')
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: 'https://smartnotesfrontend-production.up.railway.app', // React app origin
+    // origin: 'https://smartnotesfrontend-production.up.railway.app',
+    origin: 'http://localhost:5173', // React app origin
     credentials: true,
     sameSite: 'none', // allow cookies to be sent
   }));

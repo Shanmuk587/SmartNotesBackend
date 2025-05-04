@@ -49,7 +49,33 @@ cd smart-notes-backend
 npm install
 ```
 
-### 3. Setup Environment Variables
+### 3. Update CORS in Backend  
+
+> 🔄 For local development, update the CORS origin in your backend (`index.js` or `app.js`):  
+
+**Locate the CORS setup code:**  
+
+```js
+app.use(cors({
+  origin: 'https://smartnotesfrontend-production.up.railway.app', // React app origin
+  credentials: true,
+  sameSite: 'none', // allow cookies to be sent
+}));
+```
+
+**🔁 Replace it with:**
+
+```js
+app.use(cors({
+  origin: 'http://localhost:5173', // Local Vite/React app
+  credentials: true,
+  sameSite: 'none',
+}));
+```
+
+---
+
+### 4. Setup Environment Variables
 
 Create a `.env` file in the root directory and add the following:
 
@@ -71,12 +97,6 @@ GEMINI_API_KEY=your_gemini_api_key
 
 ```bash
 npm run dev
-```
-
-#### For production:
-
-```bash
-npm start
 ```
 
 The server will start at `http://localhost:3000`
