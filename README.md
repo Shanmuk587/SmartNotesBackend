@@ -39,8 +39,8 @@ This is the **backend server** for the **Smart Notes App**, built with **Node.js
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/smart-notes-backend.git
-cd smart-notes-backend
+git clone https://github.com/Shanmuk587/SmartNotesBackend.git
+cd SmartNotesBackend
 ```
 
 ### 2. Install Dependencies
