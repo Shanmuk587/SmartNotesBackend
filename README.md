@@ -51,7 +51,7 @@ npm install
 
 ### 3. Update CORS in Backend app.js 
 
-> 🔄 For local development, update the CORS origin in your backend (`index.js` or `app.js`):  
+> 🔄 For local development, update the CORS origin in the backend (app.js`):  
 
 **Locate the CORS setup code:**  
 
