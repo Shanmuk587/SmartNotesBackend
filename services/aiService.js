@@ -1,9 +1,3 @@
-/**
- * Generate a summary of the note content using Gemini API
- * @param {string} content - The note content to summarize
- * @returns {Promise<string>} - The generated summary
- */
-// summaryController.js
 require('dotenv').config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 // Initialize Gemini client
